@@ -1,4 +1,4 @@
-/* Adder11.cpp ÆÄÀÏ¿¡¼­ ºĞ¸® */
+/* Adder11.cpp íŒŒì¼ì—ì„œ ë¶„ë¦¬ */
 #include "Adder.h"
 
 Adder::Adder(int a, int b) {
