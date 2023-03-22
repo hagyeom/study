@@ -1,17 +1,17 @@
-/* ¹éÁØ 2439¹ø ¹®Á¦ : º° Âï±â 1 */
+/* ë°±ì¤€ 2439ë²ˆ ë¬¸ì œ : ë³„ ì°ê¸° 2 */
 #include <iostream>
 using namespace std;
 
 int main() {
 	int n;
-	cin >> n; // ÀÔ·Â°ª nÀ» ¹ÞÀ½
-	// i´Â i¹ø Â° ÁÙ, Áï ¸î ¹øÂ° ÁÙÀÎÁö¸¦ ¸»ÇÔ 
-	for (int i = 1; i <= n; i++) { // for ¹®À» »ç¿ëÇÏ¿© 1ºÎÅÍ n±îÁö ¹Ýº¹
-		for (int j = 1; j <= n - i; j++)  // °ø¹éÀÇ °³¼ö : n - i
+	cin >> n; // ìž…ë ¥ê°’ nì„ ë°›ìŒ
+	// iëŠ” ië²ˆ ì§¸ ì¤„, ì¦‰ ëª‡ ë²ˆì§¸ ì¤„ì¸ì§€ë¥¼ ë§í•¨ 
+	for (int i = 1; i <= n; i++) { // for ë¬¸ì„ ì‚¬ìš©í•˜ì—¬ 1ë¶€í„° nê¹Œì§€ ë°˜ë³µ
+		for (int j = 1; j <= n - i; j++)  // ê³µë°±ì˜ ê°œìˆ˜ : n - i
 			cout << " ";
-			for (int j = 0; j < i; j++)  // º° Ãâ·Â : i
+			for (int j = 0; j < i; j++)  // ë³„ ì¶œë ¥ : i
 				cout << "*";
-			cout << endl; // Ãâ·ÂÇÒ ¶§¸¶´Ù endlÀ» »ç¿ëÇÏ¿© ÁÙ¹Ù²Þ
+			cout << endl; // ì¶œë ¥í•  ë•Œë§ˆë‹¤ endlì„ ì‚¬ìš©í•˜ì—¬ ì¤„ë°”ê¿ˆ
 	}
 	return 0;
 }
