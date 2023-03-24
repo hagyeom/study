@@ -1,3 +1,4 @@
+/* ëª…í’ˆ C++ í”„ë¡œê·¸ë˜ë° 3ì¥ ì‹¤ìŠµë¬¸ì œ 3ë²ˆ */
 #include <iostream>
 #include <string>
 using namespace std;
@@ -25,14 +26,14 @@ void Account::deposit(int money) {
 }
 
 int Account::withdraw(int money) {
-	if (money > balance) { // ÀúÃàµÈ µ·ÀÌ Ã£´Â ±İ¾×º¸ÀÚ ÀÛÀº °æ¿ì
+	if (money > balance) { // ì €ì¶•ëœ ëˆì´ ì°¾ëŠ” ê¸ˆì•¡ë³´ì ì‘ì€ ê²½ìš°
 		money = balance;
 		balance = 0;
 	}
 	else
 		balance -= money;
 
-	return money; // ½ÇÁ¦ Ã£Àº ±İ¾× ¸®ÅÏ
+	return money; // ì‹¤ì œ ì°¾ì€ ê¸ˆì•¡ ë¦¬í„´
 }
 
 int Account::inquiry() {
@@ -40,9 +41,9 @@ int Account::inquiry() {
 }
 
 int main() {
-	Account a("kitae", 1, 5000); 	// id 1¹ø, ÀÜ¾× 5000¿ø, ÀÌ¸§ÀÌ kitaeÀÎ °èÁÂ »ı¼º
-	a.deposit(50000);				// 20000¿ø Àú±İ
-	cout << a.getOwner() << "ÀÇ ÀÜ¾×Àº " << a.inquiry() << endl;
-	int money = a.withdraw(20000);	// 20000¿ø Ãâ±İ. withdraw()´Â Ãâ±İÇÑ ½ÇÁ¦ ±İ¾× ¸®ÅÏ
-	cout << a.getOwner() << "ÀÇ ÀÜ¾×Àº " << a.inquiry() << endl;
+	Account a("kitae", 1, 5000); 	// id 1ë²ˆ, ì”ì•¡ 5000ì›, ì´ë¦„ì´ kitaeì¸ ê³„ì¢Œ ìƒì„±
+	a.deposit(50000);				// 20000ì› ì €ê¸ˆ
+	cout << a.getOwner() << "ì˜ ì”ì•¡ì€ " << a.inquiry() << endl;
+	int money = a.withdraw(20000);	// 20000ì› ì¶œê¸ˆ. withdraw()ëŠ” ì¶œê¸ˆí•œ ì‹¤ì œ ê¸ˆì•¡ ë¦¬í„´
+	cout << a.getOwner() << "ì˜ ì”ì•¡ì€ " << a.inquiry() << endl;
 }
