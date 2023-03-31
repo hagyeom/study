@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-	cout << "Á¤¼ö 5°³ ÀÔ·Â>>";
+	cout << "ì •ìˆ˜ 5ê°œ ì…ë ¥>>";
 	int* p = new int[5];
 	for (int i = 0; i < 5; i++) {
 		cin >> p[i]; 
@@ -11,7 +11,7 @@ int main() {
 	double sum = 0;
 	for (int i = 0; i < 5; i++)
 		sum += p[i];
-	cout << "Æò±Õ " << sum / 5 << endl;
+	cout << "í‰ê·  " << sum / 5 << endl;
 
 	delete [] p;
 }
