@@ -24,6 +24,6 @@ int Tower::getHeight() {
 int main() {
 	Tower myTower;
 	Tower seoulTower(100);
-	cout << "³ôÀÌ´Â " << myTower.getHeight() << "¹ÌÅÍ" << endl;
-	cout << "³ôÀÌ´Â " << seoulTower.getHeight() << "¹ÌÅÍ" << endl;
+	cout << "ë†’ì´ëŠ” " << myTower.getHeight() << "ë¯¸í„°" << endl;
+	cout << " " << seoulTower.getHeight() << "ë¯¸í„°" << endl;
 }
