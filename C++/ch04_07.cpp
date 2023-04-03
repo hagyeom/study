@@ -1,4 +1,4 @@
-/* Circle °´Ã¼ÀÇ µ¿Àû »ı¼º ¹× ¹İÈ¯ */
+/* Circle ê°ì²´ì˜ ë™ì  ìƒì„± ë° ë°˜í™˜ */
 #include <iostream>
 using namespace std;
 
@@ -14,16 +14,16 @@ public:
 
 Circle::Circle() {
 	radius = 1;
-	cout << "»ı¼ºÀÚ ½ÇÇà radius = " << radius << endl;
+	cout << "ìƒì„±ì ì‹¤í–‰ radius = " << radius << endl;
 }
 
 Circle::Circle(int r) {
 	radius = r;
-	cout << "»ı¼ºÀÚ ½ÇÇà radius = " << radius << endl;
+	cout << "ìƒì„±ì ì‹¤í–‰ radius = " << radius << endl;
 }
 
 Circle::~Circle() {
-	cout << "¼Ò¸êÀÚ ½ÇÇà radius = " << radius << endl;
+	cout << "ì†Œë©¸ì ì‹¤í–‰ radius = " << radius << endl;
 }
 
 int main() {
