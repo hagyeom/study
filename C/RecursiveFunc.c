@@ -1,10 +1,10 @@
-/* Àç±Í ÇÔ¼ö */
+/* ìž¬ê·€ í•¨ìˆ˜ */
 #include <stdio.h>
 
 void Recursive(int num)
 {
-	if (num <= 0) // Àç±ÍÀÇ Å»ÃâÁ¶°Ç
-		return; // Àç±ÍÀÇ Å»Ãâ
+	if (num <= 0) // ìž¬ê·€ì˜ íƒˆì¶œì¡°ê±´
+		return; // ìž¬ê·€ì˜ íƒˆì¶œ
 	printf("Recursive call! %d \n", num);
 	Recursive(num - 1);
 }
