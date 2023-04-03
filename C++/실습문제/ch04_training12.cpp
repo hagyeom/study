@@ -15,40 +15,40 @@ public:
 };
 
 class CircleManager {
-	Circle* p; // Circle ¹è¿­¿¡ ´ëÇÑ Æ÷ÀÎÅÍ
-	int size; // ¹è¿­ÀÇ Å©±â
+	Circle* p; // Circle ë°°ì—´ì— ëŒ€í•œ í¬ì¸í„°
+	int size; // ë°°ì—´ì˜ í¬ê¸°
 public:
-	// size Å©±âÀÇ ¹è¿­À» µ¿Àû »ı¼º. »ç¿ëÀÚ·ÎºÎÅÍ ÀÔ·Â ¿Ï·á
+	// size í¬ê¸°ì˜ ë°°ì—´ì„ ë™ì  ìƒì„±. ì‚¬ìš©ìë¡œë¶€í„° ì…ë ¥ ì™„ë£Œ
 	CircleManager(int size) { p = new Circle[size]; this->size = size; }
 	~CircleManager() { delete[] p; }
 	Circle* getCircle() { return p; }
-	// »ç¿ëÀÚ·ÎºÎÅÍ ¿øÀÇ ÀÌ¸§À» ÀÔ·Â¹Ş¾Æ ¸éÀû Ãâ·Â
+	// ì‚¬ìš©ìë¡œë¶€í„° ì›ì˜ ì´ë¦„ì„ ì…ë ¥ë°›ì•„ ë©´ì  ì¶œë ¥
 	void searchByName();
-	// »ç¿ëÀÚ·ÎºÎÅÍ ¸éÀûÀ» ÀÔ·Â¹Ş¾Æ ¸éÀûº¸´Ù Å« ¿øÀÇ ÀÌ¸§ Ãâ·Â
+	// ì‚¬ìš©ìë¡œë¶€í„° ë©´ì ì„ ì…ë ¥ë°›ì•„ ë©´ì ë³´ë‹¤ í° ì›ì˜ ì´ë¦„ ì¶œë ¥
 	void searchByArea();
 };
 
 void CircleManager::searchByName() {
 	string find;
-	cout << "°Ë»öÇÏ°íÀÚ ÇÏ´Â ¿øÀÇ ÀÌ¸§ >> ";
+	cout << "ê²€ìƒ‰í•˜ê³ ì í•˜ëŠ” ì›ì˜ ì´ë¦„ >> ";
 	cin >> find;
 
 	for (int i = 0; i < size; i++) {
 		if (find == p[i].getName()) {
-			cout << p[i].getName() << "ÀÇ ¸éÀûÀº " << p[i].getArea() << endl;
+			cout << p[i].getName() << "ì˜ ë©´ì ì€ " << p[i].getArea() << endl;
 			break;
 		}
 	}
 }
 void CircleManager::searchByArea() {
 	int minArea;
-	cout << "ÃÖ¼Ò ¸éÀûÀ» Á¤¼ö·Î ÀÔ·ÂÇÏ¼¼¿ä >> ";
+	cout << "ìµœì†Œ ë©´ì ì„ ì •ìˆ˜ë¡œ ì…ë ¥í•˜ì„¸ìš” >> ";
 	cin >> minArea;
-	cout << minArea << "º¸´Ù Å« ¿øÀ» °Ë»öÇÕ´Ï´Ù." << endl;
+	cout << minArea << "ë³´ë‹¤ í° ì›ì„ ê²€ìƒ‰í•©ë‹ˆë‹¤." << endl;
 
 	for (int i = 0; i < size; i++) {
 		if (p[i].getArea() > minArea) {
-			cout << p[i].getName() << "ÀÇ ¸éÀûÀº " << p[i].getArea() << ", ";
+			cout << p[i].getName() << "ì˜ ë©´ì ì€ " << p[i].getArea() << ", ";
 		}
 	}
 	cout << endl;
@@ -56,13 +56,13 @@ void CircleManager::searchByArea() {
 
 int main() {
 	int numOfCircles;
-	cout << "¿øÀÇ °³¼ö >> ";
+	cout << "ì›ì˜ ê°œìˆ˜ >> ";
 	cin >> numOfCircles;
 
 	CircleManager circles(numOfCircles);
 
 	for (int i = 0; i < numOfCircles; i++) {
-		cout << "¿ø " << i + 1 << "ÀÇ ÀÌ¸§°ú ¹İÁö¸§ >> ";
+		cout << "ì› " << i + 1 << "ì˜ ì´ë¦„ê³¼ ë°˜ì§€ë¦„ >> ";
 		string name;
 		int r;
 		cin >> name >> r;
