@@ -1,4 +1,4 @@
-/* ¸íÇ° C++ ÇÁ·Î±×·¡¹Ö 3Àå ½Ç½À¹®Á¦ 1¹ø */
+/* ëª…í’ˆ C++ í”„ë¡œê·¸ë˜ë° 3ì¥ ì‹¤ìŠµë¬¸ì œ 1ë²ˆ */
 #include <iostream>
 using namespace std;
 
@@ -25,6 +25,6 @@ int Tower::getHeight() {
 int main() {
 	Tower myTower;
 	Tower seoulTower(100);
-	cout << "³ôÀÌ´Â " << myTower.getHeight() << "¹ÌÅÍ" << endl;
-	cout << "³ôÀÌ´Â " << seoulTower.getHeight() << "¹ÌÅÍ" << endl;
+	cout << "ë†’ì´ëŠ” " << myTower.getHeight() << "ë¯¸í„°" << endl;
+	cout << "ë†’ì´ëŠ” " << seoulTower.getHeight() << "ë¯¸í„°" << endl;
 }
