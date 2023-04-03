@@ -1,6 +1,6 @@
-/* ¸â¹ö º¯¼ö ÃÊ±âÈ­¿Í À§ÀÓ »ý¼ºÀÚ È°¿ë */
-/* ´ÙÀ½ Point Å¬·¡½ºÀÇ ¸â¹ö x, y¸¦ »ý¼ºÀÚ ¼­µÎ¿¡ ÃÊ±ê°ªÀ¸·Î ÃÊ±âÈ­ÇÏ°í
-À§ÀÓ »ý¼ºÀÚ¸¦ ÀÌ¿ëÇÏ¿© ÀçÀÛ¼º */
+/* ë©¤ë²„ ë³€ìˆ˜ ì´ˆê¸°í™”ì™€ ìœ„ìž„ ìƒì„±ìž í™œìš© */
+/* ë‹¤ìŒ Point í´ëž˜ìŠ¤ì˜ ë©¤ë²„ x, yë¥¼ ìƒì„±ìž ì„œë‘ì— ì´ˆê¹ƒê°’ìœ¼ë¡œ ì´ˆê¸°í™”í•˜ê³ 
+ìœ„ìž„ ìƒì„±ìžë¥¼ ì´ìš©í•˜ì—¬ ìž¬ìž‘ì„± */
 /* class Point {
 	int x, y;
 public:
@@ -21,10 +21,10 @@ public:
 	void show() { cout << "(" << x << ", " << y << ")" << endl; }
 };
 
-Point::Point() : Point(0, 0) { } // Point(int a, int b) »ý¼ºÀÚ È£Ãâ. À§ÀÓ »ý¼ºÀÚ
+Point::Point() : Point(0, 0) { } // Point(int a, int b) ìƒì„±ìž í˜¸ì¶œ. ìœ„ìž„ ìƒì„±ìž
 
-Point::Point(int a, int b) // Å¸°Ù »ý¼ºÀÚ
-	: x(a), y(b) { } // ÄÝ·Ð(:) ÀÌÇÏ ºÎºÐÀº ´ÙÀ½ ÁÙ¿¡ ½áµµ µÊ
+Point::Point(int a, int b) // íƒ€ê²Ÿ ìƒì„±ìž
+	: x(a), y(b) { } // ì½œë¡ (:) ì´í•˜ ë¶€ë¶„ì€ ë‹¤ìŒ ì¤„ì— ì¨ë„ ë¨
 
 int main() {
 	Point origin;
