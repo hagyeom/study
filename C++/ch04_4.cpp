@@ -1,4 +1,4 @@
-/* Circle Å¬·¡½ºÀÇ 2Â÷¿ø ¹è¿­ ¼±¾ğ ¹× È°¿ë */
+/* Circle í´ë˜ìŠ¤ì˜ 2ì°¨ì› ë°°ì—´ ì„ ì–¸ ë° í™œìš© */
 #include <iostream>
 using namespace std;
 
@@ -25,9 +25,9 @@ int main() {
 	circles[1][1].setRadius(5);
 	circles[1][2].setRadius(6);
 
-	for(int i=0;i<2;i++) // ¹è¿­ÀÇ °¢ ¿ø¼Ò °´Ã¼ÀÇ ¸â¹ö Á¢±Ù
+	for(int i=0;i<2;i++) // ë°°ì—´ì˜ ê° ì›ì†Œ ê°ì²´ì˜ ë©¤ë²„ ì ‘ê·¼
 		for (int j = 0; j < 3; j++) {
-			cout << "Circle [" << i << "," << j << "]ÀÇ ¸éÀûÀº ";
+			cout << "Circle [" << i << "," << j << "]ì˜ ë©´ì ì€ ";
 			cout << circles[i][j].getArea() << endl;
 		}
 }
