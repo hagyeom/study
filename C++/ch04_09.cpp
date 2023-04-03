@@ -1,4 +1,4 @@
-/* Circle ¹è¿­ÀÇ µ¿Àû »ı¼º ¹× ¹İÈ¯ */
+/* Circle ë°°ì—´ì˜ ë™ì  ìƒì„± ë° ë°˜í™˜ */
 #include <iostream>
 using namespace std;
 
@@ -14,20 +14,20 @@ public:
 
 Circle::Circle() {
 	radius = 1;
-	cout << "»ı¼ºÀÚ ½ÇÇà radius = " << radius << endl;
+	cout << "ìƒì„±ì ì‹¤í–‰ radius = " << radius << endl;
 }
 
 Circle::Circle(int r) {
 	radius = r;
-	cout << "»ı¼ºÀÚ ½ÇÇà radius = " << radius << endl;
+	cout << "ìƒì„±ì ì‹¤í–‰ radius = " << radius << endl;
 }
 
 Circle::~Circle() {
-	cout << "¼Ò¸êÀÚ ½ÇÇà radius = " << radius << endl;
+	cout << "ì†Œë©¸ì ì‹¤í–‰ radius = " << radius << endl;
 }
 
 int main() {
-	Circle* pArray = new Circle[3]; // °´Ã¼ ¹è¿­ÀÇ µ¿Àû »ı¼º
+	Circle* pArray = new Circle[3]; // ê°ì²´ ë°°ì—´ì˜ ë™ì  ìƒì„±
 	pArray[0].setRadius(10);
 	pArray[1].setRadius(20);
 	pArray[2].setRadius(30);
@@ -35,11 +35,11 @@ int main() {
 	for (int i = 0; i < 3; i++) {
 		cout << pArray[i].getArea() << endl;
 	}
-	Circle* p = pArray; // Æ÷ÀÎÅÍ p¿¡ ¹è¿­ÀÇ ÁÖ¼Ò°ª ¼³Á¤
+	Circle* p = pArray; // í¬ì¸í„° pì— ë°°ì—´ì˜ ì£¼ì†Œê°’ ì„¤ì •
 	for (int i = 0; i < 3; i++) {
 		cout << p->getArea() << endl;
-		p++; // ´ÙÀ½ ¿ø¼ÒÀÇ ÁÖ¼Ò·Î Áõ°¡
+		p++; // ë‹¤ìŒ ì›ì†Œì˜ ì£¼ì†Œë¡œ ì¦ê°€
 	}
 
-	delete[] pArray; // °´Ã¼ ¹è¿­ ¹İÈ¯
+	delete[] pArray; // ê°ì²´ ë°°ì—´ ë°˜í™˜
 }
