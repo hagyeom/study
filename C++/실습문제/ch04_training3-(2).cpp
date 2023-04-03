@@ -1,11 +1,11 @@
-/* 3-(2) string Å¬·¡½ºÀÇ find() ¸â¹ö ÇÔ¼ö¸¦ ÀÌ¿ëÇÏ¿© ÀÛ¼º */
+/* 3-(2) string í´ë˜ìŠ¤ì˜ find() ë©¤ë²„ í•¨ìˆ˜ë¥¼ ì´ìš©í•˜ì—¬ ì‘ì„± */
 #include <iostream>
 #include <string>
 using namespace std;
 
 int main() {
 	string text;
-	cout << "¹®ÀÚ¿­ ÀÔ·Â>> ";
+	cout << "ë¬¸ìì—´ ì…ë ¥>> ";
 	getline(cin, text, '\n');
 
 	int index = 0;
@@ -15,5 +15,5 @@ int main() {
 			break;
 		index++;
 	}
-	cout << "¹®ÀÚ a´Â " << index << "°³ ÀÖ½À´Ï´Ù." << endl;
+	cout << "ë¬¸ì aëŠ” " << index << "ê°œ ìˆìŠµë‹ˆë‹¤." << endl;
 }
