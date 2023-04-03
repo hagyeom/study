@@ -1,8 +1,8 @@
-/* Adder11.cpp ÆÄÀÏ¿¡¼­ ºĞ¸® */
+/* Adder11.cpp íŒŒì¼ì—ì„œ ë¶„ë¦¬ */
 #ifndef ADDER_H
 #define ADDER_H
 
-class Adder { // µ¡¼À ¸ğµâ Å¬·¡½º
+class Adder { // ë§ì…ˆ ëª¨ë“ˆ í´ë˜ìŠ¤
 	int op1, op2;
 public:
 	Adder(int a, int b);
