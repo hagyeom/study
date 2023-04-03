@@ -20,7 +20,7 @@ int SelectableRandom::next() {
 	int n;
 	do {
 		n = rand();
-	} while (n % 2 == 1); // Â¦¼ö ·£´ı Á¤¼ö ¹ß»ı
+	} while (n % 2 == 1); // ì§ìˆ˜ ëœë¤ ì •ìˆ˜ ë°œìƒ
 	return n;
 }
 
@@ -29,18 +29,18 @@ int SelectableRandom::nextInRange(int x, int y) {
 	int n;
 	do {
 		n = rand() % (y - x + 1) + x;
-	} while (n % 2 == 0); // È¦¼ö ·£´ı Á¤¼ö ¹ß»ı
+	} while (n % 2 == 0); // í™€ìˆ˜ ëœë¤ ì •ìˆ˜ ë°œìƒ
 	return n;
 }
 
 int main() {
 	SelectableRandom r;
-	cout << "-- 0¿¡¼­ " << RAND_MAX << "±îÁöÀÇ Â¦¼ö ·£´ı Á¤¼ö 10 °³--" << endl;
+	cout << "-- 0ì—ì„œ " << RAND_MAX << "ê¹Œì§€ì˜ ì§ìˆ˜ ëœë¤ ì •ìˆ˜ 10 ê°œ--" << endl;
 	for (int i = 0; i < 10; i++) {
 		int n = r.next();
 		cout << n << ' ';
 	}
-	cout << endl << endl << "-- 2¿¡¼­ " << "9 ±îÁöÀÇ ·£´ı È¦¼ö Á¤¼ö 10 °³ --" << endl;
+	cout << endl << endl << "-- 2ì—ì„œ " << "9 ê¹Œì§€ì˜ ëœë¤ í™€ìˆ˜ ì •ìˆ˜ 10 ê°œ --" << endl;
 	for (int i = 0; i < 10; i++) {
 		int n = r.nextInRange(2, 9);
 		cout << n << ' ';
