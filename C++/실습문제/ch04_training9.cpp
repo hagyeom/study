@@ -22,26 +22,26 @@ void Person::set(string name, string tel) {
 
 int main() {
 	Person person[3];
-	cout << "ÀÌ¸§°ú ÀüÈ­ ¹øÈ£¸¦ ÀÔ·ÂÇØ ÁÖ¼¼¿ä" << endl;
+	cout << "ì´ë¦„ê³¼ ì „í™” ë²ˆí˜¸ë¥¼ ìž…ë ¥í•´ ì£¼ì„¸ìš”" << endl;
 	for (int i = 0; i < 3; i++) {
-		cout << "»ç¶÷ " << i + 1 << ">> ";
+		cout << "ì‚¬ëžŒ " << i + 1 << ">> ";
 		string name, tel;
 		cin >> name >> tel;
 		person[i].set(name, tel);
 	}
 
-	cout << "¸ðµç »ç¶÷ÀÇ ÀÌ¸§Àº ";
+	cout << "ëª¨ë“  ì‚¬ëžŒì˜ ì´ë¦„ì€ ";
 	for (int i = 0; i < 3; i++) {
 		cout << person[i].getName() << ' ';
 	}
 	cout << endl;
 
-	cout << "ÀüÈ­¹øÈ£ °Ë»öÇÕ´Ï´Ù. ÀÌ¸§À» ÀÔ·ÂÇÏ¼¼¿ä>>";
+	cout << "ì „í™”ë²ˆí˜¸ ê²€ìƒ‰í•©ë‹ˆë‹¤. ì´ë¦„ì„ ìž…ë ¥í•˜ì„¸ìš”>>";
 	string find;
 	cin >> find;
 	for (int i = 0; i < 3; i++) {
 		if (find.compare(person[i].getName()) == 0) {
-			cout << "ÀüÈ­ ¹øÈ£´Â " << person[i].getTel() << endl;
+			cout << "ì „í™” ë²ˆí˜¸ëŠ” " << person[i].getTel() << endl;
 			break;
 		}
 	}
