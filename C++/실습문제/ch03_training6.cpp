@@ -36,12 +36,12 @@ int EvenRandom::nextInRange(int x, int y) {
 
 int main() {
 	EvenRandom r;
-	cout << "-- 0¿¡¼­ " << RAND_MAX << "±îÁöÀÇ ·£´ý Á¤¼ö 10 °³--" << endl;
+	cout << "-- 0ì—ì„œ " << RAND_MAX << "ê¹Œì§€ì˜ ëžœë¤ ì •ìˆ˜ 10 ê°œ--" << endl;
 	for (int i = 0; i < 10; i++) {
 		int n = r.next();
 		cout << n << ' ';
 	}
-	cout << endl << endl << "-- 2¿¡¼­ " << "10 ±îÁöÀÇ ·£´ý Á¤¼ö 10 °³ --" << endl;
+	cout << endl << endl << "-- 2ì—ì„œ " << "10 ê¹Œì§€ì˜ ëžœë¤ ì •ìˆ˜ 10 ê°œ --" << endl;
 	for (int i = 0; i < 10; i++) {
 		int n = r.nextInRange(2, 10);
 		cout << n << ' ';
