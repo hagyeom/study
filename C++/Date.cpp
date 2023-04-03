@@ -1,4 +1,4 @@
-/* ¸íÇ° C++ ÇÁ·Î±×·¡¹Ö 3Àå ½Ç½À¹®Á¦ 2¹ø */
+/* ëª…í’ˆ C++ í”„ë¡œê·¸ë˜ë° 3ì¥ ì‹¤ìŠµë¬¸ì œ 2ë²ˆ */
 #include <iostream>
 #include <string>
 using namespace std;
@@ -21,8 +21,8 @@ Date::Date(int y, int m, int d) {
 	month = m;
 	day = d;
 }
-// <string> Çì´õ ÆÄÀÏÀÇ stoi() ÇÔ¼ö¸¦ ÀÌ¿ëÇÏ¸é stringÀÇ ¹®ÀÚ¿­À» ¼ıÀÚ·Î º¯È¯ÇÒ ¼ö ÀÖ´Ù.
-// string substr (size_t pos = 0, size_t len = npos) const; : ¹®ÀÚ¿­ÀÇ ÀÏºÎ¸¦ ÃßÃâÇÔ.
+// <string> í—¤ë” íŒŒì¼ì˜ stoi() í•¨ìˆ˜ë¥¼ ì´ìš©í•˜ë©´ stringì˜ ë¬¸ìì—´ì„ ìˆ«ìë¡œ ë³€í™˜í•  ìˆ˜ ìˆë‹¤.
+// string substr (size_t pos = 0, size_t len = npos) const; : ë¬¸ìì—´ì˜ ì¼ë¶€ë¥¼ ì¶”ì¶œí•¨.
 Date::Date(string date) {
 	year = stoi(date);
 	month = stoi(date.substr(5, 6));
@@ -30,7 +30,7 @@ Date::Date(string date) {
 }
 
 void Date::show() {
-	cout << year << "³â" << month << "¿ù" << day << "ÀÏ" << endl;
+	cout << year << "ë…„" << month << "ì›”" << day << "ì¼" << endl;
 }
 
 int Date::getYear() {
@@ -46,8 +46,8 @@ int Date::getDay() {
 }
 
 int main() {
-	Date birth(2014, 3, 20); // 2014³â 3¿ù 20ÀÏ
-	Date independenceDay("1945/8/15"); // 1945³â 8¿ù 15ÀÏ
+	Date birth(2014, 3, 20); // 2014ë…„ 3ì›” 20ì¼
+	Date independenceDay("1945/8/15"); // 1945ë…„ 8ì›” 15ì¼
 	independenceDay.show();
 	cout << birth.getYear() << ',' << birth.getMonth() << ',' << birth.getDay() << endl;
 }
