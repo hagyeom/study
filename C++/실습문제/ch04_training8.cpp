@@ -2,10 +2,10 @@
 using namespace std;
 
 class Circle {
-	int radius; // ¿øÀÇ ¹İÁö¸§ °ª
+	int radius; // ì›ì˜ ë°˜ì§€ë¦„ ê°’
 public:
-	void setRadius(int radius); // ¹İÁö¸§À» ¼³Á¤ÇÑ´Ù.
-	double getArea(); // ¸éÀûÀ» ¸®ÅÏÇÑ´Ù.
+	void setRadius(int radius); // ë°˜ì§€ë¦„ì„ ì„¤ì •í•œë‹¤.
+	double getArea(); // ë©´ì ì„ ë¦¬í„´í•œë‹¤.
 };
 
 void Circle::setRadius(int radius) {
@@ -18,11 +18,11 @@ double Circle::getArea() {
 
 int main() {
 	int n, r;
-	cout << "¿øÀÇ °³¼ö >> ";
+	cout << "ì›ì˜ ê°œìˆ˜ >> ";
 	cin >> n;
 	Circle* pArray = new Circle[n];
 	for (int i = 0; i < n; i++) {
-		cout << "¿ø " << i + 1 << "ÀÇ ¹İÁö¸§ >> ";
+		cout << "ì› " << i + 1 << "ì˜ ë°˜ì§€ë¦„ >> ";
 		cin >> r;
 		pArray[i].setRadius(r);
 	}
@@ -33,5 +33,5 @@ int main() {
 			count++;
 		p++;
 	}
-	cout << "¸éÀûÀÌ 100º¸´Ù Å« ¿øÀº " << count << "°³ ÀÔ´Ï´Ù" << endl;
+	cout << "ë©´ì ì´ 100ë³´ë‹¤ í° ì›ì€ " << count << "ê°œ ì…ë‹ˆë‹¤" << endl;
 }
