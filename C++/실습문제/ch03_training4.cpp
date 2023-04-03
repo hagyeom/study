@@ -5,11 +5,11 @@ class CoffeeMachine {
 	int coffee, water, sugar;
 public:
 	CoffeeMachine(int coffee, int water, int sugar);
-	int drinkEspresso(); // Ä¿ÇÇ 1, ¹° 1 ¼Òºñ
-	void show(); // ÇöÀç Ä¿ÇÇ ¸Ó½ÅÀÇ »óÅÂ Ãâ·Â
-	int drinkAmericano(); // Ä¿ÇÇ 1, ¹° 2 ¼Òºñ
-	int drinkSugarCoffee(); // Ä¿ÇÇ 1, ¹° 2, ¼³ÅÁ 1 ¼Òºñ
-	int fill(); // Ä¿ÇÇ 10, ¹° 10, ¼³ÅÁ 10À¸·Î Ã¤¿ì±â
+	int drinkEspresso(); // ì»¤í”¼ 1, ë¬¼ 1 ì†Œë¹„
+	void show(); // í˜„ì¬ ì»¤í”¼ ë¨¸ì‹ ì˜ ìƒíƒœ ì¶œë ¥
+	int drinkAmericano(); // ì»¤í”¼ 1, ë¬¼ 2 ì†Œë¹„
+	int drinkSugarCoffee(); // ì»¤í”¼ 1, ë¬¼ 2, ì„¤íƒ• 1 ì†Œë¹„
+	int fill(); // ì»¤í”¼ 10, ë¬¼ 10, ì„¤íƒ• 10ìœ¼ë¡œ ì±„ìš°ê¸°
 };
 
 CoffeeMachine::CoffeeMachine(int coffee, int water, int sugar) {
@@ -22,7 +22,7 @@ int CoffeeMachine::drinkEspresso() {
 }
 
 void CoffeeMachine::show() {
-	cout << "Ä¿ÇÇ ¸Ó½Å »óÅÂ, Ä¿ÇÇ:" << coffee << " ¹°:" << water <<'\t'<< " ¼³ÅÁ:" << sugar << endl;
+	cout << "ì»¤í”¼ ë¨¸ì‹  ìƒíƒœ, ì»¤í”¼:" << coffee << " ë¬¼:" << water <<'\t'<< " ì„¤íƒ•:" << sugar << endl;
 }
 
 int CoffeeMachine::drinkAmericano() {
