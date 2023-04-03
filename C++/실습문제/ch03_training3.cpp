@@ -5,13 +5,13 @@ using namespace std;
 class Account {
 	string name;
 	int id;
-	int balance; // ÀÜ¾×
+	int balance; // ì”ì•¡
 public:
-	Account(string name, int id, int balance); // »ı¼ºÀÚ
+	Account(string name, int id, int balance); // ìƒì„±ì
 	string getOwner();
-	int deposit(int money); // Àú±İ
-	int withdraw(int money); // Ãâ±İ
-	int inquiry(); // Á¶È¸
+	int deposit(int money); // ì €ê¸ˆ
+	int withdraw(int money); // ì¶œê¸ˆ
+	int inquiry(); // ì¡°íšŒ
 };
 
 Account::Account(string name, int id, int balance) {
@@ -39,7 +39,7 @@ int Account::inquiry() {
 int main() {
 	Account a("kitae", 1, 5000);
 	a.deposit(50000);
-	cout << a.getOwner() << "ÀÇ ÀÜ¾×Àº " << a.inquiry() << endl;
+	cout << a.getOwner() << "ì˜ ì”ì•¡ì€ " << a.inquiry() << endl;
 	int money = a.withdraw(20000);
-	cout << a.getOwner() << "ÀÇ ÀÜ¾×Àº " << a.inquiry() << endl;
+	cout << a.getOwner() << "ì˜ ì”ì•¡ì€ " << a.inquiry() << endl;
 }
