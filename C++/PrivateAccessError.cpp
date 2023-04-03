@@ -1,4 +1,4 @@
-/* Á¢±Ù ÁöÁ¤ÀÚ */
+/* ì ‘ê·¼ ì§€ì •ì */
 #include <iostream>
 using namespace std;
 
@@ -35,12 +35,12 @@ void PrivateAccessError::g() {
 
 int main() {
 	// PrivateAccessError objA; 
-	// (9) »ı¼ºÀÚ PrivateAccessError()´Â privateÀÌ¹Ç·Î main()¿¡¼­ È£ÃâÇÒ ¼ö ¾ø´Ù.
+	// (9) ìƒì„±ì PrivateAccessError()ëŠ” privateì´ë¯€ë¡œ main()ì—ì„œ í˜¸ì¶œí•  ìˆ˜ ì—†ë‹¤.
 	PrivateAccessError objB(100); // (10)
 	// objB.a = 10; 
-	// (11) a´Â PrivateAccessError Å¬·¡½ºÀÇ private ¸â¹öÀÌ¹Ç·Î main()¿¡¼­ Á¢±ÙÇÒ ¼ö ¾ø´Ù.
+	// (11) aëŠ” PrivateAccessError í´ë˜ìŠ¤ì˜ private ë©¤ë²„ì´ë¯€ë¡œ main()ì—ì„œ ì ‘ê·¼í•  ìˆ˜ ì—†ë‹¤.
 	objB.b = 20; // (12)
 	// objB.f(); 
-	// (13) f()´Â PrivateAccessError Å¬·¡½ºÀÇ private ¸â¹öÀÌ¹Ç·Î main()¿¡¼­ È£ÃâÇÒ ¼ö ¾ø´Ù.
+	// (13) f()ëŠ” PrivateAccessError í´ë˜ìŠ¤ì˜ private ë©¤ë²„ì´ë¯€ë¡œ main()ì—ì„œ í˜¸ì¶œí•  ìˆ˜ ì—†ë‹¤.
 	objB.g(); // (14)
 }
