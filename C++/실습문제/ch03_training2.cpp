@@ -21,14 +21,14 @@ Date::Date(int year, int month, int day) {
 Date::Date(string s) {
 	int slash;
 	this->year = stoi(s);
-	slash = s.find('/'); // find()´Â ¹®ÀÚ¿­¿¡¼­ Æ¯Á¤ ¹®ÀÚ³ª ¹®ÀÚ¿­À» ¹ß°ßÇÏ¸é Ã¹ ¹øÂ° ÀÎµ¦½º¸¦ ¸®ÅÏ
+	slash = s.find('/'); // find()ëŠ” ë¬¸ìžì—´ì—ì„œ íŠ¹ì • ë¬¸ìžë‚˜ ë¬¸ìžì—´ì„ ë°œê²¬í•˜ë©´ ì²« ë²ˆì§¸ ì¸ë±ìŠ¤ë¥¼ ë¦¬í„´
 	this->month = stoi(s.substr(slash + 1)); 
 	slash = s.find('/', slash + 1);
 	this->day = stoi(s.substr(slash + 1));
 }
 
 void Date::show() {
-	cout << year << "³â" << month << "¿ù" << day << "ÀÏ" << endl;
+	cout << year << "ë…„" << month << "ì›”" << day << "ì¼" << endl;
 }
 
 int Date::getYear() {
