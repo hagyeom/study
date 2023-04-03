@@ -1,4 +1,4 @@
-/* ���丮�� ���� ��ȯ�ϴ� Factorial �Լ� */
+/* 팩토리얼 값을 반환하는 Factorial 함수 */
 #include <stdio.h>
 
 int Factorial(int n)
