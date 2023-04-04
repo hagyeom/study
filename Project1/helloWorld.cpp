@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-// ù Ŀ��
+// 첫 커밋
 int main() {
 	cout << "Hello, World! \n";
 	return 0;
